@@ -1,0 +1,20 @@
+Source: libtool
+Section: unknown
+Priority: optional
+Maintainer: Jackson Hansen <madjack971@bsdmail.com>
+Build-Depends: debhelper-compat (= 13), dh-autoreconf
+Standards-Version: 4.5.1
+Homepage: https://www.gnu.org/software/libtool/
+Rules-Requires-Root: no
+Vcs-Git: https://github.com/maddjack2020/libtool.git
+Vcs-Browser: https://github.com/maddjack2020/libtool
+
+Package: libtool
+Section: libs
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: auto-generated package by debmake
+ The Libtool package contains the GNU generic library support script. It makes
+ the use of shared libraries simpler with a consistent, portable interface.
